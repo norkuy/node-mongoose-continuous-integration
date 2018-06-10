@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: X+nrq2KsoIuQ9jybm1ph4jXEOtNY228PrT1kQVJ/9vRrRtRWazR0OqqxcRmiwLxE1nZjuslZxnV2DftfFDgxmTcZUk2hXa6Gim1wb6qm8sietAkn7bQDykv9HfYNOcVMGER3SlqgpgKcuPFbLN1npagzAiJlJXOWvlvhlSACbR95C8a4X99tVOtSA9OXS343I3/CZyMlT/NIf7QWATGo1gJAaMvgW28hOZXz/E96CRQhvoBa1h9g3al12hGpRKzonW8Dlp8NlYXA2pOLW3CVIptYLR4WspEiQP0bjkSvotxbDXA3+hJe7JfkX8bz1QQ9p1Q2sCuPfUD6AS6PDgCJ+VAe+4egdePyWB1Mk33nv6vYcivHV9nXdqSoXZi8sMwXOpuq6lDjscDGrgcbNZ0Kzan4okpe8NlOMEMCW9QZTQHy1ci33d1sBdQhBL4iKtsaJvphyBgWMs+VxaaZbHCIV3bA21PfbruNXBwr8J64jTfTWEBccGT27g8lFRTSycZEjXv4v4b0Me11DGuS2r96yLomKqPpdWtDxzEYR9rO1nIeijlEkYyG1nIqOUJp5pn2OxjquFGVs3dDZRSvRASvefenP2bbKbiiGMdKBVphse445184jhpYLn6uv2PfG56kdAq/AOKfyq7+3N9DfEIwtCpAo0n6jm4EQHrwB+KGk18=
+  app: ancient-earth-39173
+  on:
+    repo: norkuy/node-mongoose-continuous-integration
+    branch: feature/with-tests
